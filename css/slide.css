@@ -1,0 +1,67 @@
+
+.slide-base{
+    height: 60vh;
+    background: url();
+    background: url(../images/pexels-photo-442587.jpeg);
+    background-size: cover;
+}
+.slide-base li{
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border-right: 5px solid #fff;
+    float: left;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.slide-base li:last-child{
+    border-right: none;background: url(../images/architecture.jpg);
+    background-size: cover;
+}
+.slide-base li:nth-child(2){
+    border-right: none;background: url(../images/promo-events.jpg);
+    background-size: cover;
+}
+.slide-base li:nth-child(3){
+    border-right: none;background: url(../images/director.jpg);
+    background-size: cover;
+}
+.slide-base li:nth-child(4){
+    border-right: none;background: url(../images/destination-wedding.jpg);
+    background-size: cover;
+}
+.slide-base li:first-child{
+    border-right: none;background: url(../images/film-making.jpg);
+    background-size: cover;
+}
+
+.slide-base:hover li{
+    width: 10%;
+}
+.slide-base li:hover{
+    width: 60%;
+}
+
+.slide-base li .team-slide-img-content{
+    padding: 30px;
+    position: absolute;
+    bottom: -200%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.team-slide-img-content p{
+    margin-top: 30px;
+}
+.slide-base li:hover .team-slide-img-content{
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
